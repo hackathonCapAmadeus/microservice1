@@ -13,4 +13,10 @@ public class HelloResource {
     public String hello() {
         return "Hello";
     }
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public String calculate() {
+        return Integer.valueOf(2).toString();
+    }
 }
